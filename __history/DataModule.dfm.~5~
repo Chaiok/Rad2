@@ -1,0 +1,20 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 337
+  Width = 554
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=D:\radfiribbd\RADDB.FDB'
+      'User_Name=SYSDBA'
+      'Password=44442222a'
+      'DriverID=FB')
+    Connected = True
+    Left = 32
+    Top = 16
+  end
+  object QuerySelectPostavchiki: TFDQuery
+    Connection = FDConnection1
+    Left = 104
+    Top = 16
+  end
+end

@@ -1,0 +1,16 @@
+program Project2;
+
+uses
+  Vcl.Forms,
+  MainForm in 'MainForm.pas' {Form1},
+  DataModule in 'DataModule.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form);
+  Application.CreateForm(TDataModule1, DM);
+  Application.Run;
+end.

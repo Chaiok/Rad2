@@ -1,0 +1,78 @@
+unit PostavchikForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, DataModule;
+
+type
+  TForm3 = class(TForm)
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Добавить: TButton;
+    Удалить: TButton;
+    Обновить: TButton;
+    ComboBox1: TComboBox;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    procedure ДобавитьClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+
+implementation
+
+{$R *.dfm}
+
+procedure refreshcombobox();
+var
+  i: Integer;
+  sItem: String;
+begin
+  Form3.ComboBox1.Clear;
+  try
+    DM.FDQuery1.SQL.Text:=
+    'SELECT * FROM POSTAVCHIK';
+    DM.FDQuery1.Open;
+    while not DM.FDQuery1.Eof do begin
+    i:=DM.FDQuery1.FieldByName('ID').AsInteger;
+    sItem:=DM.FDQuery1.FieldByName('LNAME').AsString+' '+DM.FDQuery1.FieldByName('FNAME').AsString;
+    Form3.ComboBox1.Items.AddObject(sItem, TObject(i));
+    DM.FDQuery1.Next;
+  end;
+  finally
+  DM.FDQuery1.Connection.Commit;
+  DM.FDQuery1.Close;
+  end;
+end;
+
+procedure TForm3.ДобавитьClick(Sender: TObject);
+begin
+  try
+  DM.FDQuery1.SQL.Text:=
+  'INSERT INTO POSTAVCHIK (FNAME, LNAME,MNAME) VALUES (:FNAME, :LNAME,:MNAME)';
+  DM.FDQuery1.ParamByName('FNAME').AsString := Edit1.Text;
+  DM.FDQuery1.ParamByName('LNAME').AsString := Edit2.Text;
+  DM.FDQuery1.ParamByName('MNAME').AsString := Edit3.Text;
+  DM.FDQuery1.ExecSQL;
+  //DM.FDQuery1.Open;
+  //DM.FDQuery1.Free;
+  DM.FDQuery1.Connection.Commit;
+  DM.FDConnection1.Commit;
+  finally
+  DM.FDQuery1.Close;
+  DM.QuerySelectTovari.Active:=False;
+  DM.QuerySelectTovari.Active:=True;
+  refreshcombobox();
+  end;
+end;
+
+end.

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.965,D:\rad2\Unit4.pas=D:\rad2\ВщыефмлфАщкьpas.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.652,D:\rad2\ВщыефмлфАщкьpas.dfm=D:\rad2\DostavkaForm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.543,=D:\rad2\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.461,D:\rad2\MainForm.dfm=D:\rad\MainForm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.582,D:\rad2\Unit3.dfm=D:\rad2\PostavchikForm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.890,=D:\rad2\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.652,D:\rad2\ВщыефмлфАщкьpas.pas=D:\rad2\DostavkaForm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.965,D:\rad2\Unit4.dfm=D:\rad2\ВщыефмлфАщкьpas.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.765,D:\rad2\Project2.dproj=D:\rad\Project2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.385,D:\rad2\Unit5.pas=D:\rad2\NacladnayForm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.385,D:\rad2\Unit5.dfm=D:\rad2\NacladnayForm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.696,D:\rad2\DataModule.pas=D:\rad2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.843,D:\rad2\Unit2.dfm=D:\rad2\TovarForm.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.461,D:\rad2\MainForm.pas=D:\rad\MainForm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.696,D:\rad2\DataModule.dfm=D:\rad2\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.916,D:\rad\MainForm.pas=D:\rad\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.456,=D:\rad2\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.582,D:\rad2\Unit3.pas=D:\rad2\PostavchikForm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.251,=D:\rad\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.310,=D:\rad2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.916,D:\rad\MainForm.dfm=D:\rad\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.819,=D:\rad2\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.843,D:\rad2\Unit2.pas=D:\rad2\TovarForm.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.398,=D:\rad\Unit1.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="DataModule.pas"/>
+    <File Path="DataModule.dfm"/>
+    <File Path="MainForm.pas"/>
+    <File Path="MainForm.dfm"/>
+    <File Path="TovarForm.pas"/>
+    <File Path="TovarForm.dfm"/>
+    <File Path="PostavchikForm.pas"/>
+    <File Path="PostavchikForm.dfm"/>
+    <File Path="DostavkaForm.pas"/>
+    <File Path="DostavkaForm.dfm"/>
+    <File Path="NacladnayForm.pas"/>
+    <File Path="NacladnayForm.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
